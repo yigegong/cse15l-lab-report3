@@ -88,6 +88,7 @@ biomed/rr74.txt:2
 (base) gongyige@gongyigedeMacBook-Air technical % grep -c "gene" biomed/1471-2091-2-13.txt
 32
 ```
+
 2. `grep -h` examples:
 
 ```
