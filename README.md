@@ -62,7 +62,7 @@ To fix this problem, we only iterate for half of the length, saving the element 
 > The following four commands are all searched from the same source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 
-1. `grep -c` examples:
+1. **`grep -c` examples:**
    
 	```
 	(base) gongyige@gongyigedeMacBook-Air technical % grep -c "gene" biomed/*.txt
@@ -87,13 +87,16 @@ To fix this problem, we only iterate for half of the length, saving the element 
 	biomed/rr73.txt:4
 	biomed/rr74.txt:2
 	```
-
+ 
+ **Explanation**: `grep -c` option counts the number of appearance of the pattern in the file given. In this example, it gives how many times `gene` occur in each file within the biomed directory, which is useful because we can find out how many times the pattern occur in each file without manually counting.
+ 
 	```
 	(base) gongyige@gongyigedeMacBook-Air technical % grep -c "gene" biomed/1471-2091-2-13.txt
 	32
 	```
+ **Explanation**: In this example, it gives how many times `gene` occur in the file `biomed/1471-2091-2-13.txt`. This is useful because we can find out how many times the pattern occur in the file without manually counting.
 
-2. `grep -h` examples:
+2. **`grep -h` examples:**
 
 ```
 (base) gongyige@gongyigedeMacBook-Air technical % grep -h "doctors" plos/*.txt
@@ -132,11 +135,13 @@ To fix this problem, we only iterate for half of the length, saving the element 
           practices and attitudes among the three health specialties surveyed (doctors, nurses, and
             people with HIV/AIDS should not be employed in the health field than doctors and that
 ```
-
+ **Explanation**: `grep -h` option outputs all matched lines for the pattern in the given file. In this case, it gives all the lines that contain "doctors" in all of the txt files within the plos directory, which is useful because we don't have to search for the context where "doctors" appear manually.
+ 
 ```
 (base) gongyige@gongyigedeMacBook-Air technical % grep -h "gene" plos/pmed.0010024.txt
         generally considered to be a cornerstone of treatment—but how much fluid should be given?
 ```
+ **Explanation**: In this example, it gives all the lines that contain "gene" in the the file `plos/pmed.0010024.txt`, which is useful because we don't have to search for the context where "doctors" appear manually.
 
 3. `grep -l` examples:
 
@@ -172,7 +177,7 @@ plos/pmed.0020123.txt
 plos/pmed.0020232.txt
 plos/pmed.0020249.txt
 ```
-
+ **Explanation**: `grep -l` option outputs the list of files that contain the pattern "generally". In this case, it gives the list of files that contain "generally" in all of the txt files within the plos directory, which is useful because we don't have to manually search for which files contain the targeted pattern among many files.
 ```
 (base) gongyige@gongyigedeMacBook-Air technical % grep -l "bacillus" biomed/*.txt 
 biomed/1471-2091-2-12.txt
@@ -183,13 +188,15 @@ biomed/1471-2164-3-33.txt
 biomed/gb-2001-2-4-research0010.txt
 biomed/gb-2002-3-3-research0012.txt
 ```
-
+ **Explanation**: In this case, it gives the list of files that contain "bacillus" in all of the txt files within the biomed directory, which is useful because we don't have to manually search for which files contain the targeted keyword among many files.
+ 
 4. `grep -w` examples:
 
 ```
 (base) gongyige@gongyigedeMacBook-Air technical % grep -w "genetical" biomed/*.txt
 biomed/1471-2156-4-10.txt:        can be dissected with more precise genetical techniques.
 ```
+ **Explanation**: `grep -w` option outputs all the lines within the given file that contain words that exactly match the pattern. In this case, it gives the line that contain exactly the word `genetical` instead of words like `genetically`, which is useful as it narrows the focus by matching word instead of matching strings to exclude unwanted search results.
 
 ```
 (base) gongyige@gongyigedeMacBook-Air technical % grep -w "avoparcin" plos/*.txt
@@ -204,3 +211,4 @@ plos/pmed.0020232.txt:        vancomycin was used less in European than in US ho
 plos/pmed.0020232.txt:        than US hospitals. Put another way, the impact of avoparcin use on European hospitals was
 plos/pmed.0020232.txt:        Despite the evidence that avoparcin use has had a large impact on the emergence and
 ```
+ **Explanation**: In this case, it gives the line that contain exactly the word "avoparcin", which is useful as it narrows the focus by matching word instead of matching strings to exclude unwanted or even irrelavant search results; for example, it excludes irrelavent results like "generally" when you are searching for "gene".
