@@ -25,7 +25,7 @@ We choose the bug in the method `reverseInPlace` in the java file ArrayExamples.
 
 3. The symptom:
    ![Image]()
-   ![3771714545460_ pic](https://github.com/yigegong/cse15l-lab-report3/assets/139932435/fbc7527c-d624-409f-90d7-be609fb16ab3)
+   ![Image](https://github.com/yigegong/cse15l-lab-report3/assets/139932435/fbc7527c-d624-409f-90d7-be609fb16ab3)
 
 4. The bug:
     ```
