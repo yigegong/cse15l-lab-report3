@@ -92,7 +92,7 @@ static void reverseInPlace(int[] arr) {
 	(base) gongyige@gongyigedeMacBook-Air technical % grep -c "gene" biomed/1471-2091-2-13.txt
 	32
 	```
- **Explanation**: In this example, it gives how many times `gene` occur in the file `biomed/1471-2091-2-13.txt`. This is useful because we can find out how many times the pattern occur in the file without manually counting.
+ **Explanation**: In this example, it gives how many times `gene` occur in the file `biomed/1471-2091-2-13.txt`, which is 32 times. This is useful because we can find out how many times the pattern occur in the file without manually counting.
 
 2. **`grep -h` examples:**
 
