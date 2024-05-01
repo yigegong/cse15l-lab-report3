@@ -52,6 +52,7 @@ static void reverseInPlace(int[] arr) {
   ```
 
 5. The bug is this line: `arr[i] = arr[arr.length - i - 1]`, which goes wrong for the iterations after arr.length/2 and copies the original elements back.
+   
    To fix this problem, we only iterate for half of the length, saving the element in the first half to `temp`, passing `arr[arr.length - i - 1]` to `arr[i]`, and passing the value of `arr[i]` to `arr[arr.length - i - 1]` through `temp`. By swaping values in pairs, we successfully reverse the array.
 
 ## Part2 for `grep` command
