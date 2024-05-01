@@ -175,7 +175,7 @@ plos/pmed.0020123.txt
 plos/pmed.0020232.txt
 plos/pmed.0020249.txt
 ```
- **Explanation**: `grep -l` option outputs the list of files that contain the pattern "generally". In this case, it gives the list of files that contain "generally" in all of the txt files within the plos directory, which is useful because we don't have to manually search for which files contain the targeted pattern among many files.
+ **Explanation**: `grep -l` option outputs the list of files that contain the pattern. In this case, it gives the list of files that contain "generally" in all of the txt files within the plos directory, which is useful because we don't have to manually search for which files contain the targeted pattern among so many files.
 ```
 (base) gongyige@gongyigedeMacBook-Air technical % grep -l "bacillus" biomed/*.txt 
 biomed/1471-2091-2-12.txt
