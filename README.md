@@ -60,29 +60,29 @@ To fix this problem, we only iterate for half of the length, saving the element 
 # Part2 for `grep` command
 1. `grep -c` examples:
    
-   ```
-   (base) gongyige@gongyigedeMacBook-Air technical % grep -c "gene" biomed/*.txt
-biomed/1468-6708-3-1.txt:0
-biomed/1468-6708-3-10.txt:1
-biomed/1468-6708-3-3.txt:1
-biomed/1468-6708-3-4.txt:6
-biomed/1468-6708-3-7.txt:3
-biomed/1471-2091-2-10.txt:2
-biomed/1471-2091-2-11.txt:12
-biomed/1471-2091-2-12.txt:4
-biomed/1471-2091-2-13.txt:32
-biomed/1471-2091-2-16.txt:3
-...
-biomed/rr166.txt:10
-biomed/rr167.txt:11
-biomed/rr171.txt:5
-biomed/rr172.txt:10
-biomed/rr191.txt:32
-biomed/rr196.txt:12
-biomed/rr37.txt:12
-biomed/rr73.txt:4
-biomed/rr74.txt:2
-   ```
+	```
+	(base) gongyige@gongyigedeMacBook-Air technical % grep -c "gene" biomed/*.txt
+	biomed/1468-6708-3-1.txt:0
+	biomed/1468-6708-3-10.txt:1
+	biomed/1468-6708-3-3.txt:1
+	biomed/1468-6708-3-4.txt:6
+	biomed/1468-6708-3-7.txt:3
+	biomed/1471-2091-2-10.txt:2
+	biomed/1471-2091-2-11.txt:12
+	biomed/1471-2091-2-12.txt:4
+	biomed/1471-2091-2-13.txt:32
+	biomed/1471-2091-2-16.txt:3
+	...
+	biomed/rr166.txt:10
+	biomed/rr167.txt:11
+	biomed/rr171.txt:5
+	biomed/rr172.txt:10
+	biomed/rr191.txt:32
+	biomed/rr196.txt:12
+	biomed/rr37.txt:12
+	biomed/rr73.txt:4
+	biomed/rr74.txt:2
+	```
 
 	```
 	(base) gongyige@gongyigedeMacBook-Air technical % grep -c "gene" biomed/1471-2091-2-13.txt
