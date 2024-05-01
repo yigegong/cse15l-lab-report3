@@ -1,7 +1,6 @@
 # Part1
 We choose the bug in the method `reverseInPlace` in the java file ArrayExamples.
 
-
 1. A failure-inducing input:
    ```
    @Test 
@@ -24,8 +23,7 @@ We choose the bug in the method `reverseInPlace` in the java file ArrayExamples.
   In this case, `input1={1}` does not induce a failure.
 
 3. The symptom:
-   ![Image]()
-   ![Image](https://github.com/yigegong/cse15l-lab-report3/assets/139932435/fbc7527c-d624-409f-90d7-be609fb16ab3)
+   ![Image](1.jpg)
 
 4. The bug:
     ```
@@ -49,5 +47,8 @@ static void reverseInPlace(int[] arr) {
 5. Briefly describe (2-3 sentences) why the fix addresses the issue.
 The bug is this line: `arr[i] = arr[arr.length - i - 1]`, which goes wrong for the iterations after arr.length/2 and copies the original elements back.
 
+
+
 To fix this problem, we only iterate for half of the length, saving the element in the first half to `temp`, passing `arr[arr.length - i - 1]` to `arr[i]`, and passing the value of `arr[i]` to `arr[arr.length - i - 1]` through `temp`. By swaping values in pairs, we successfully reverse the array.
+
 # Part2
