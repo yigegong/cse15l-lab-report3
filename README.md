@@ -139,7 +139,7 @@ static void reverseInPlace(int[] arr) {
 (base) gongyige@gongyigedeMacBook-Air technical % grep -h "gene" plos/pmed.0010024.txt
         generally considered to be a cornerstone of treatment—but how much fluid should be given?
 ```
- **Explanation**: In this example, it gives all the lines that contain "gene" in the the file `plos/pmed.0010024.txt`, which is useful because we don't have to search for the context where "doctors" appear manually.
+ **Explanation**: In this example, it gives all the lines that contain `gene` in the the file `plos/pmed.0010024.txt`, which is useful because we don't have to search for the context where "doctors" appear manually.
 
 3. **`grep -l` examples:**
 
