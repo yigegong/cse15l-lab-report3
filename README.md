@@ -1,4 +1,4 @@
-![3761714543588_ pic](https://github.com/yigegong/cse15l-lab-report3/assets/139932435/deb34c18-23be-4a15-a418-fdc5bcb8fce1)# Part1
+# Part1
 We choose the bug in the method `reverseInPlace` in the java file ArrayExamples.
 
 
@@ -19,7 +19,8 @@ We choose the bug in the method `reverseInPlace` in the java file ArrayExamples.
 	}`
   In this case, `input1={1}` does not induce a failure.
 
-3. The symptom, as the output of running the two tests above (provide it as a screenshot -- one test should pass, one test should fail).
+3. The symptom:
+   ![Image]()
    
 7. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown).
 8. Briefly describe (2-3 sentences) why the fix addresses the issue.
