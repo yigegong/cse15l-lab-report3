@@ -141,7 +141,7 @@ static void reverseInPlace(int[] arr) {
 ```
  **Explanation**: In this example, it gives all the lines that contain "gene" in the the file `plos/pmed.0010024.txt`, which is useful because we don't have to search for the context where "doctors" appear manually.
 
-3. `grep -l` examples:
+3. **`grep -l` examples:**
 
 ```
 (base) gongyige@gongyigedeMacBook-Air technical % grep -l "generally" plos/*.txt
@@ -188,7 +188,7 @@ biomed/gb-2002-3-3-research0012.txt
 ```
  **Explanation**: In this case, it gives the list of files that contain "bacillus" in all of the txt files within the biomed directory, which is useful because we don't have to manually search for which files contain the targeted keyword among many files.
  
-4. `grep -w` examples:
+4. **`grep -w` examples:**
 
 ```
 (base) gongyige@gongyigedeMacBook-Air technical % grep -w "genetical" biomed/*.txt
